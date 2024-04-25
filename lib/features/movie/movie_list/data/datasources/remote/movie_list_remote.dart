@@ -1,6 +1,4 @@
-
 import 'package:injectable/injectable.dart';
-
 import '../../../../../../core/core.dart';
 import '../../models/movie_list_model.dart';
 @lazySingleton

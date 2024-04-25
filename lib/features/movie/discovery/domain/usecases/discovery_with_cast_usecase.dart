@@ -1,7 +1,5 @@
 import 'package:dartz/dartz.dart';
-import 'package:filmolog/features/movie/discovery/domain/entities/discovery_with_cast_entity.dart';
 import 'package:injectable/injectable.dart';
-
 import '../../../../../core/core.dart';
 import '../../../../../di.dart';
 import '../domain.dart';

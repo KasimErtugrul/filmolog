@@ -1,6 +1,5 @@
 import 'package:dartz/dartz.dart';
 import 'package:injectable/injectable.dart';
-
 import '../../../../../core/core.dart';
 import '../../../../../di.dart';
 import '../../domain/domain.dart';

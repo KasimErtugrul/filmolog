@@ -1,12 +1,7 @@
-import 'dart:developer';
-
 import 'package:equatable/equatable.dart';
 import 'package:filmolog/core/core.dart';
-import 'package:filmolog/features/movie/discovery/domain/entities/discovery_with_cast_entity.dart';
-import 'package:filmolog/features/movie/discovery/domain/usecases/discovery_with_cast_usecase.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
-
 import '../../../../../di.dart';
 import '../../domain/domain.dart';
 
@@ -25,7 +20,7 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
 
   DiscoveryBloc() : super(const DiscoveryState()) {
     on<FetchDiscoveryFutureMovies>((event, emit) async {
-      log('bloc future discovery');
+     
       var result = await futureMoviesUseacase.call(event.page!);
 
       result.fold(

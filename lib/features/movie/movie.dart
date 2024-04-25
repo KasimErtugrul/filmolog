@@ -5,3 +5,5 @@ export 'collection/collection.dart';
 export 'discovery/discovery.dart';
 export 'movies/movies.dart';
 export 'movie_list/movie_list.dart';
+export 'people/people.dart';
+export 'search/search.dart';

@@ -1,7 +1,5 @@
-import 'dart:developer';
 
 import 'package:dartz/dartz.dart';
-import 'package:filmolog/features/movie/discovery/domain/entities/discovery_with_cast_entity.dart';
 import 'package:injectable/injectable.dart';
 
 import '../../../../../core/core.dart';
@@ -18,7 +16,7 @@ class DiscoveryRepositoryImp extends DiscoveryRepository {
       {int page = 1}) async {
     try {
       var remote = await datasourceRemote.getFutureMovies(page: page);
-      log('future movies DiscoveryRepositoryImp');
+    
       return Right(remote);
     } on ServiceException catch (failure) {
       return Left(ServiceFailure(failure.errorHandle.statusMessage));

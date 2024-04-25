@@ -1,10 +1,7 @@
-import 'dart:developer';
 
 import 'package:injectable/injectable.dart';
-
 import '../../../../../di.dart';
 import '../data.dart';
-import '../models/discovery_with_cast_model.dart';
 
 abstract class DiscoveryMoviesRemoteDatasource {
   Future<FutureMoviesModel> getFutureMovies({int page = 1});
@@ -22,7 +19,7 @@ class DiscoveryMoviesRemoteDatasourceImp
       getIt.get<DiscoveryMoviesRemote>();
   @override
   Future<FutureMoviesModel> getFutureMovies({int page = 1}) async {
-    log('future movies DiscoveryMoviesRemoteDatasourceImp');
+   
     return futureMoviesRemote.getFutureTurkishMovies(page: page);
   }
 

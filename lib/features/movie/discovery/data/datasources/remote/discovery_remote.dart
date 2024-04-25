@@ -1,10 +1,7 @@
 
-import 'package:filmolog/features/movie/discovery/data/models/discovery_with_cast_model.dart';
 import 'package:injectable/injectable.dart';
-
 import 'package:intl/intl.dart';
 import 'package:tmdb_api/tmdb_api.dart';
-
 import '../../../../../../core/core.dart';
 import '../../data.dart';
 

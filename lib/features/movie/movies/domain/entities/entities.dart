@@ -3,4 +3,5 @@
 
 
 export 'movies_detail_entity.dart';
+export 'movies_detail_sim_reco_entity.dart';
 export 'movies_images_entity.dart';

@@ -1,4 +1,3 @@
-import 'dart:developer';
 
 import 'package:dartz/dartz.dart';
 import 'package:injectable/injectable.dart';
@@ -11,7 +10,7 @@ class FutureMoviesUseacase extends BaseUseCase<FutureMoviesEntity, int> {
   final DiscoveryRepository discoveryRepository = getIt.get<DiscoveryRepository>();
   @override
   Future<Either<Failure, FutureMoviesEntity>> call(int parameter) async {
-    log('future movies');
+   
     return await discoveryRepository.getFutureTurkishMovies(page: parameter);
   }
 }

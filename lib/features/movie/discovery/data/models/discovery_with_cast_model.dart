@@ -1,6 +1,7 @@
 
 
-import 'package:filmolog/features/movie/discovery/domain/entities/discovery_with_cast_entity.dart';
+
+import '../../domain/domain.dart';
 
 class DiscoveryWithCastModel extends DiscoveryWithCastEntity{
 

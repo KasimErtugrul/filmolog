@@ -2,7 +2,6 @@ import 'package:injectable/injectable.dart';
 
 import '../../../../../di.dart';
 import '../data.dart';
-import '../models/movie_detail_sim_reco_model.dart';
 
 abstract class MoviesDetailRemoteDatasource {
   Future<MoviesDetailModel> getMoviesDetail(int movieId);
