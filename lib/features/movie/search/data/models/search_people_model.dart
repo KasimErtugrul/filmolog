@@ -1,0 +1,150 @@
+import 'package:filmolog/features/movie/search/domain/entities/search_people_entity.dart';
+
+class SearchPeopleModel extends SearchPeopleEntity {
+  const SearchPeopleModel({
+    super.page,
+    super.results,
+    super.totalPages,
+    super.totalResults,
+  });
+
+  factory SearchPeopleModel.fromMap(Map<String, dynamic> json) =>
+      SearchPeopleModel(
+        page: json["page"],
+        results: json["results"] == null
+            ? []
+            : List<Result>.from(json["results"]!.map((x) => Result.fromMap(x))),
+        totalPages: json["total_pages"],
+        totalResults: json["total_results"],
+      );
+
+  @override
+  Map<String, dynamic> toMap() => {
+        "page": page,
+        "results": results == null
+            ? []
+            : List<dynamic>.from(results!.map((x) => x.toMap())),
+        "total_pages": totalPages,
+        "total_results": totalResults,
+      };
+}
+
+class Result extends SearchPeopleResultEntity {
+  const Result({
+    super.adult,
+    super.gender,
+    super.id,
+    super.knownForDepartment,
+    super.name,
+    super.originalName,
+    super.popularity,
+    super.profilePath,
+    super.knownFor,
+  });
+
+  factory Result.fromMap(Map<String, dynamic> json) => Result(
+        adult: json["adult"],
+        gender: json["gender"],
+        id: json["id"],
+        knownForDepartment: json["known_for_department"],
+        name: json["name"],
+        originalName: json["original_name"],
+        popularity: json["popularity"]?.toDouble(),
+        profilePath: json["profile_path"],
+        knownFor: json["known_for"] == null
+            ? []
+            : List<KnownFor>.from(
+                json["known_for"]!.map((x) => KnownFor.fromMap(x))),
+      );
+
+  @override
+  Map<String, dynamic> toMap() => {
+        "adult": adult,
+        "gender": gender,
+        "id": id,
+        "known_for_department": knownForDepartment,
+        "name": name,
+        "original_name": originalName,
+        "popularity": popularity,
+        "profile_path": profilePath,
+        "known_for": knownFor == null
+            ? []
+            : List<dynamic>.from(knownFor!.map((x) => x.toMap())),
+      };
+}
+
+class KnownFor extends SearchPeopleKnownForEntity {
+  const KnownFor({
+    super.backdropPath,
+    super.id,
+    super.originalName,
+    super.overview,
+    super.posterPath,
+    super.mediaType,
+    super.adult,
+    super.name,
+    super.originalLanguage,
+    super.genreIds,
+    super.popularity,
+    super.firstAirDate,
+    super.voteAverage,
+    super.voteCount,
+    super.originCountry,
+    super.originalTitle,
+    super.title,
+    super.releaseDate,
+    super.video,
+  });
+
+  factory KnownFor.fromMap(Map<String, dynamic> json) => KnownFor(
+        backdropPath: json["backdrop_path"],
+        id: json["id"],
+        originalName: json["original_name"],
+        overview: json["overview"],
+        posterPath: json["poster_path"],
+        mediaType: json["media_type"],
+        adult: json["adult"],
+        name: json["name"],
+        originalLanguage: json["original_language"],
+        genreIds: json["genre_ids"] == null
+            ? []
+            : List<int>.from(json["genre_ids"]!.map((x) => x)),
+        popularity: json["popularity"]?.toDouble(),
+        firstAirDate: json["first_air_date"],
+        voteAverage: json["vote_average"]?.toDouble(),
+        voteCount: json["vote_count"],
+        originCountry: json["origin_country"] == null
+            ? []
+            : List<String>.from(json["origin_country"]!.map((x) => x)),
+        originalTitle: json["original_title"],
+        title: json["title"],
+        releaseDate: json["release_date"],
+        video: json["video"],
+      );
+
+  @override
+  Map<String, dynamic> toMap() => {
+        "backdrop_path": backdropPath,
+        "id": id,
+        "original_name": originalName,
+        "overview": overview,
+        "poster_path": posterPath,
+        "media_type": mediaType,
+        "adult": adult,
+        "name": name,
+        "original_language": originalLanguage,
+        "genre_ids":
+            genreIds == null ? [] : List<dynamic>.from(genreIds!.map((x) => x)),
+        "popularity": popularity,
+        "first_air_date": firstAirDate,
+        "vote_average": voteAverage,
+        "vote_count": voteCount,
+        "origin_country": originCountry == null
+            ? []
+            : List<dynamic>.from(originCountry!.map((x) => x)),
+        "original_title": originalTitle,
+        "title": title,
+        "release_date": releaseDate,
+        "video": video,
+      };
+}
