@@ -114,7 +114,7 @@ class MoviesDetailPage extends StatelessWidget {
                       // Ekip Tab
                       const MovieDetailCasts(),
                       // Yorum Tab
-                     Center(child: Text('Yorum Page'),),
+                     const Center(child: Text('Yorum Page'),),
                       // Size Özel Tab
                       MovieDetailRecommandation(
                         movieId: moviesId,
