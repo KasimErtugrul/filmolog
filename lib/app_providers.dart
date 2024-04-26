@@ -2,6 +2,7 @@ import 'package:filmolog/features/movie/search/presentation/bloc/search_bloc.dar
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import 'features/movie/movies/presentation/cubit/cubit/cast_cubit.dart';
 import 'main.dart';
 import 'features/features.dart';
 

@@ -3,8 +3,7 @@ import 'dart:developer';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:conditional_builder_null_safety/conditional_builder_null_safety.dart';
 import 'package:filmolog/core/api/api.dart';
-import 'package:filmolog/features/movie/people/presentation/widget/discovery_tab/discovery_widget.dart';
-import 'package:filmolog/features/movie/people/presentation/widget/movie_cast_tab/people_movies.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

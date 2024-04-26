@@ -31,7 +31,7 @@ class _SearchPageState extends State<SearchPage> {
                   padding: const EdgeInsets.all(8.0),
                   child: Column(
                     children: [
-                      SearchPageFormWidget(),
+                      const SearchPageFormWidget(),
                       Gap(15.h),
                       const SearchPageResultBoxWidget(),
                       const Divider(),

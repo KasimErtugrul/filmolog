@@ -4,6 +4,7 @@ import 'package:intl/intl.dart';
 import 'package:tmdb_api/tmdb_api.dart';
 import '../../../../../../core/core.dart';
 import '../../data.dart';
+import '../../models/future_movies_model.dart';
 
 @lazySingleton
 class DiscoveryMoviesRemote {

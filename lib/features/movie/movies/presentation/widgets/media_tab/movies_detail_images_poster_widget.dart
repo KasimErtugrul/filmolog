@@ -5,7 +5,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../../../core/core.dart';
-import '../../../../movie.dart';
+import '../../../movies.dart';
 
 class MoviesDetailImagesPosterWidget extends StatelessWidget {
   const MoviesDetailImagesPosterWidget({
@@ -63,7 +63,7 @@ class MoviesDetailImagesPosterWidget extends StatelessWidget {
               const Divider(),
             ],
           ),
-          fallback: (context) => SizedBox.shrink(),
+          fallback: (context) => const SizedBox.shrink(),
         );
       },
     );

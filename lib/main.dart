@@ -1,4 +1,3 @@
-import 'package:filmolog/app/pages/main_page.dart';
 import 'package:filmolog/lib.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';

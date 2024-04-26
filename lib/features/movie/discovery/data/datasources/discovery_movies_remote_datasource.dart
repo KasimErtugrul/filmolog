@@ -1,4 +1,5 @@
 
+import 'package:filmolog/features/movie/discovery/data/models/future_movies_model.dart';
 import 'package:injectable/injectable.dart';
 import '../../../../../di.dart';
 import '../data.dart';

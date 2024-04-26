@@ -3,5 +3,4 @@
 
 
 export 'discovery_with_cast_model.dart';
-export 'future_movies_model.dart';
 export 'future_tv_discovery_model.dart';

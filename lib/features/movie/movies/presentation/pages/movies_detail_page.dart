@@ -1,17 +1,11 @@
 import 'dart:developer';
 import 'package:conditional_builder_null_safety/conditional_builder_null_safety.dart';
-import 'package:filmolog/features/features.dart';
-import 'package:filmolog/features/movie/movie.dart';
 import 'package:filmolog/features/movie/movies/presentation/presentation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../movies.dart';
-import '../widgets/abouth_tab/movie_detail_about.dart';
-import '../widgets/cast_and_crew_tab/movie_detail_cast_crew.dart';
-import '../widgets/media_tab/movie_detail_media.dart';
-import '../widgets/recommendatiton_tab/movie_detail_reco.dart';
-import '../widgets/similar_tab/movie_detail_similar.dart';
+
 
 class MoviesDetailPage extends StatelessWidget {
   final int moviesId;

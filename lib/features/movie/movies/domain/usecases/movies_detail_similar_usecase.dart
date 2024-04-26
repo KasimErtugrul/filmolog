@@ -1,5 +1,4 @@
 import 'package:dartz/dartz.dart';
-import 'package:filmolog/features/movie/movies/domain/entities/movies_detail_sim_reco_entity.dart';
 import 'package:injectable/injectable.dart';
 
 import '../../../../../core/core.dart';

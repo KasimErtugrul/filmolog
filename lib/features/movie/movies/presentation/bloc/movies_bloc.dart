@@ -1,14 +1,11 @@
 import 'dart:developer';
 
 import 'package:equatable/equatable.dart';
-import 'package:filmolog/features/movie/movies/domain/entities/movies_detail_sim_reco_entity.dart';
-import 'package:filmolog/features/movie/movies/domain/usecases/movies_detail_similar_usecase.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
 
 import '../../../../../di.dart';
 import '../../domain/domain.dart';
-import '../../domain/usecases/movie_detail_recommend_usecase.dart';
 
 part 'movies_event.dart';
 part 'movies_state.dart';

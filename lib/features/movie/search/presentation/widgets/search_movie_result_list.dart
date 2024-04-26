@@ -4,7 +4,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
 import '../../../../../app/app.dart';
-import '../../../../../app/widgets/base_poster.dart';
 import '../../../movies/presentation/pages/movies_detail_page.dart';
 import '../bloc/search_bloc.dart';
 

@@ -9,7 +9,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
 import '../../../../../../app/app.dart';
 import '../../../../../../core/core.dart';
-import '../../../movie.dart';
+import '../../movies.dart';
 
 class MovieDetailStackWidget extends StatelessWidget {
   final String? posterPath;

@@ -1,8 +1,5 @@
 import 'package:filmolog/app/app.dart';
-import 'package:filmolog/app/pages/movies_page.dart';
-import 'package:filmolog/app/pages/profile_page.dart';
 import 'package:filmolog/features/movie/search/presentation/pages/search_page.dart';
-import 'package:filmolog/app/pages/tv_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
